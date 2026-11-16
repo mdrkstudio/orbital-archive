@@ -6,7 +6,10 @@
 
 ![Orbital Archive: медузы](docs/jellyfish.png)
 
-![Orbital Archive: движение в подводном мире](docs/demo.gif)
+<picture>
+  <source media="(prefers-reduced-motion: no-preference)" srcset="docs/demo.gif">
+  <img src="docs/demo-poster.png" alt="Orbital Archive: движение в подводном мире" width="560" height="315">
+</picture>
 
 ## Внутри
 
