@@ -1,0 +1,24 @@
+{
+  "name": "orbital-archive",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An interactive procedural underwater world built with Three.js and GLSL.",
+  "author": "MDRK Studio",
+  "homepage": "https://mdrkstudio.ru",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "three": "0.178.0"
+  },
+  "devDependencies": {
+    "vite": "7.3.8"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0"
+}

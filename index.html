@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#041721" />
+    <meta name="description" content="Интерактивный мир в браузере. Демонстрация 3D и WebGL." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23b8ff35' stroke-width='6'/%3E%3Cpath d='M16 49 49 14' stroke='%23b8ff35' stroke-width='6'/%3E%3C/svg%3E" />
+    <title>Orbital Archive - WebGL Demo</title>
+  </head>
+  <body>
+    <div class="loader" aria-live="polite">
+      <div class="loader__mark" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+      <p class="loader__label">ЗАГРУЗКА МИРА</p>
+      <p class="loader__count">00</p>
+    </div>
+
+    <canvas id="webgl" aria-hidden="true"></canvas>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <header class="hud">
+      <a class="brand magnetic" href="#intro" aria-label="В начало">
+        <span class="brand__glyph">Ø</span>
+        <span class="brand__copy">ORBITAL<br />ARCHIVE</span>
+      </a>
+      <div class="hud__status">
+        <span class="status-dot"></span>
+        <span>WEBGL DEMO</span>
+      </div>
+      <nav class="nav-pill" aria-label="Главная навигация">
+        <a class="magnetic" href="#work">МИР</a>
+        <span></span>
+        <a class="magnetic" href="#contact">WEBGL</a>
+      </nav>
+    </header>
+
+    <aside class="rail" aria-label="Прогресс просмотра">
+      <span class="rail__chapter">00</span>
+      <div class="rail__track"><i></i></div>
+      <span class="rail__total">03</span>
+      <nav class="flight-stops" aria-label="Сцены">
+        <button type="button" data-flight-scene="0" aria-label="Сцена 1: Медузы">01</button>
+        <button type="button" data-flight-scene="1" aria-label="Сцена 2: Подводный сад">02</button>
+        <button type="button" data-flight-scene="2" aria-label="Сцена 3: Дерево">03</button>
+      </nav>
+    </aside>
+
+    <main class="scroll-world">
+      <section class="panel panel--demo" id="intro" data-stage="0">
+        <h1>Интерактивный мир<br />в браузере</h1>
+      </section>
+      <section class="panel panel--demo" id="work" data-stage="1">
+        <h2>Глубина и движение</h2>
+      </section>
+      <section class="panel panel--demo" id="cove" data-stage="3">
+        <h2>3D и интерактив</h2>
+      </section>
+      <section class="panel panel--demo" id="contact" data-stage="3">
+        <h2>Всё это - WebGL</h2>
+      </section>
+    </main>
+
+    <div class="interaction-hint" aria-hidden="true">
+      <span>КУРСОР</span><i></i><span>ПОТЯНИ</span><i></i><span>КОЛЕСО / СВАЙП</span>
+    </div>
+
+    <div class="cursor" aria-hidden="true"><span></span></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
