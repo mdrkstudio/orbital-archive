@@ -6,6 +6,8 @@
 
 ![Orbital Archive: медузы](docs/jellyfish.png)
 
+![Orbital Archive: движение в подводном мире](docs/demo.gif)
+
 ## Внутри
 
 - Three.js, JavaScript, Vite и GLSL.
